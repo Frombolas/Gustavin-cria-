@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulário</title>
+  </head>
+  <body style="text-align: center;">
+    <h1> Cadastro </h1>
+    <form action="*" method="post" autocomplete="on">
+      <fieldset>
+    <legend>Dados pessoais:</legend>
+  <label for="fname">Primeiro Nome:</label><br>
+  <input type="text" id="fname" name="fname"placeholder="Pedro"><br>
+  <label for="lname">Sobrenome:</label><br>
+  <input type="text" id="lname" name="lname" placeholder="Alves"><br>
+  <label for="senha">Coloque sua senha</label><br>
+  <input type="password" id="senha" name="senha"placeholder="senha****"><br>
+  <label for="cnome">Curso:</label><br>
+  <input type="text" id="cnome"name="cnome" placeholder=" Medicina"><br><br>
+</fieldset>
+  <h2>Botoes de Escolha</h2>
+
+<p>Escolha seu jogo preferido</p>
+
+<form>
+  <input type="radio" id="league" name="jogo" value="Lol">
+  <label for="html">leagueoflegends</label><br>
+  <input type="radio" id="gtav" name="jogo" value="GTAV">
+  <label for="css">GTAV</label><br>
+  <input type="radio" id="MortalKobat" name="jogo" value="MortalKobat">
+  <label for="javascript">MortalKobat</label>
+<br>
+
+<p> Qual veiculo você tem?</p>
+<input type="checkbox" id="vehicle1" name="vehicle1" value="biscicleta">
+  <label for="vehicle1"> biscicleta</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Carro">
+  <label for="vehicle2"> Carro</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Moto">
+  <label for="vehicle3">Moto</label><br><br>
+
+  <br>
+  <p> Escolha um carro: </p>
+  <label for="cars">Opões de carros:</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="Mustang" selected >Mustang</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+<label for="message">Quem é você?</label><br>
+  <textarea name="message" rows="10" cols="30" placeholder="Escreva aqui">
+
+  </textarea><br><br>
+
+  <h2>The button Element</h2>
+
+  <button type="button" onclick="alert('Hello World!')">Click Me!</button><br><br>
+
+
+  <input type="submit" value="Enviar">
+</form>
+
+
+  </body>
+</html>
