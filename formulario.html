@@ -6,20 +6,27 @@
   </head>
   <body style="text-align: center;">
     <h1> Cadastro </h1>
+
     <form action="*" method="post" autocomplete="on">
       <fieldset>
     <legend>Dados pessoais:</legend>
   <label for="fname">Primeiro Nome:</label><br>
-  <input type="text" id="fname" name="fname"placeholder="Pedro"><br>
+  <input type="text" id="fname" name="fname"placeholder="Pedro" required; autofocus><br>
   <label for="lname">Sobrenome:</label><br>
-  <input type="text" id="lname" name="lname" placeholder="Alves"><br>
+  <input type="text" id="lname" name="lname" placeholder="Alves"required><br>
   <label for="senha">Coloque sua senha</label><br>
-  <input type="password" id="senha" name="senha"placeholder="senha****"><br>
+  <input type="password" id="senha" name="senha"placeholder="senha****"required><br>
   <label for="cnome">Curso:</label><br>
-  <input type="text" id="cnome"name="cnome" placeholder=" Medicina"><br><br>
+  <input type="text" id="cnome"name="cnome" placeholder=" Medicina"required><br>
+  <label for="email" required >Coloque seu email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="birthday">Data de nascimento</label><br>
+  <input type="date" id="birthday" name="birthday" required ><br><br>
+  <label for="myfile">Coloque um arquivo de foto:</label>
+  <input type="file" id="myfile" name="myfile"><br>
 </fieldset>
   <h2>Botoes de Escolha</h2>
-
+<fieldset>
 <p>Escolha seu jogo preferido</p>
 
 <form>
@@ -30,7 +37,7 @@
   <input type="radio" id="MortalKobat" name="jogo" value="MortalKobat">
   <label for="javascript">MortalKobat</label>
 <br>
-
+</fieldset>
 <p> Qual veiculo você tem?</p>
 <input type="checkbox" id="vehicle1" name="vehicle1" value="biscicleta">
   <label for="vehicle1"> biscicleta</label><br>
@@ -57,9 +64,26 @@
   <h2>Botao de elementos</h2>
 
   <button type="button" onclick="alert('Salve garai')">Aperta ae!</button><br><br>
+  <h2> botao datalist</h2>
+
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+<br>
+<h2>Selecione favorita: </h2>
+
+<label for="favcolor">Escolha a cor:</label>
+  <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+  <br><br>
 
 
   <input type="submit" value="Enviar">
+   <input type="reset">
 </form>
 
 
