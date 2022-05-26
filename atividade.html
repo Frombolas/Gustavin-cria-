@@ -5,31 +5,63 @@
     <title>Atividade de Formulário</title>
   </head>
   <body style="text-align: center;">
+    <form action="*" method="post" autocomplete="on">
+
     <h1>Dados do usuário</h1><br>
-    <label for="ncomple">Nome completo: </label><br>
-    <input type="text" name="ncomple"><br>
-    <label for="email">E-mail</label><br>
-    <input type="email" id="email" name="email"><br>
-    <label for="senha">Senha:</label><br>
-    <input type="password" id="senha" name="senha"><br>
-    <label for="telef">Número de telefone:</label><br>
-    <input type="tel" name="telef" placeholder="(xx) 9xxxx-xxxx">
-    <p>sexo</p>
-    <input type="radio" id="sexf" name="sex" value="feminino">
-    <label for="sexf">Feminino</label>
-    <input type="radio" id="sexm" name="sex" value="masculino">
-    <label for="sexm">Masculino</label><br><br>
-    <label for="ufs">UF de nascimento: </label><br>
-    <select id="ufs" name="ufs"><br><br>
-      <option value="pb">Paraiba</option>
-      <option value="ba">Bahia</option>
-      <option value="ce">Ceara</option>
-      <option value="ma">Maranhao</option>
+                        <label for="ncomple">Nome completo: </label><br>
+                           <input type="text" name="ncomple"><br>
+                             <label for="email">E-mail</label><br>
+                               <input type="email" id="email" name="email"><br>
+                                 <label for="senha">Senha:</label><br>
+                                  <input type="password" id="senha" name="senha"><br>
+                                  <label for="telef">Número de telefone:</label><br>
+                                <input type="tel" name="telef" placeholder="(xx) 9xxxx-xxxx">
+                              <p>sexo</p>
+                            <input type="radio" id="sexf" name="sex" value="feminino">
+                          <label for="sexf">Feminino</label>
+                        <input type="radio" id="sexm" name="sex" value="masculino">
+                      <label for="sexm">Masculino</label><br><br>
+                    <label for="ufs">UF de nascimento: </label><br>
+                  <select id="ufs" name="ufs"><br><br>
+                <option value="pb">Paraiba</option>
+              <option value="ba">Bahia</option>
+            <option value="ce">Ceara</option>
+          <option value="ma">Maranhao</option>
       <option value="se">Sergipe</option>
-
     </select>
+    <br>
+    <label for="dataespecial">Informe uma data especial</label><br>
+     <input type="date" id ="dataespecial" name="dataespecial"><br>
+         <label for="nascimentohr">Data e hora do nascimento: </label><br>
+           <input type="datetime-local" id="nascimentohr" name="nascimentohr"><br>
+             <label for="favcor">Sua cor favorita: </label><br>
+               <input type="color" id="favcor" name="favcor"><br>
+                 <label for="texto">Quantas pessoas tem a sua família?</label><br>
+                    <input type="text" id="texto" name="texto"><br>
+                      <label for="hrsacord">Que horas você costuma acordar? </label><br>
+                         <input type="time" id="hrsacord" name="hrsacord"><br>
+                           <label for="urlperf">Adicione a url do seu perfil na rede social: </label><br>
+                             <input type="url" id="urlperf" name="urlperf"><br>
+                                <label for="prefmusc">Quais as suas preferências musicais? </label><br>
+                                  <input type="checkbox" id="prefmusc1" name="prefmusc1" value="rock">
+                                    <label for="prefmusc1">Rock</label>
+                                       <input type="checkbox" id="prefmusc2" name="prefmusc2" value="sertanejo">
+                                         <label for="prefmusc2">Sertanejo</label>
+                                           <input type="checkbox" id="prefmusc3" name="prefmusc3" value="trap">
+                                             <label for="prefmusc3">Trap</label>
+                                               <input type="checkbox" id="prefmusc4" name="prefmusc4" value="gospel">
+                                                <label for="prefmusc4">Gospel</label>
+                                                 <input type="checkbox" id="prefmusc5" name="prefmusc5" value="k-pop">
+                                                  <label for="prefmusc5">K-pop</label>
+                                                   <input type="checkbox" id="prefmusc6" name="prefmusc6" value="forro">
+                                                   <label for="prefmusc6">Forró</label>
+                                                  <input type="checkbox" id="prefmusc7" name="prefmusc7" value="funk">
+                                                 <label for="prefmusc7">Funk</label><br><br>
+                                                <label for="fotinha">Envie uma foto de perfil: </label><br><br>
+                                              <input type="file" id="fotinha" name="fotinha"><br><br>
+<input type="submit" name="submit" value="Enviar"><br>
 
-
+  </form>
 
   </body>
 </html>
